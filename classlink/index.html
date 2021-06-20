@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital@1&display=swap" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>One Class Link</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light sticky-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html" id="navbar-brand1">
+                <i class='bx bxs-home'></i>
+                Home
+            </a>
+        </div>
+    </nav>
+
+    <div class="continer text-center mt-5 mb-5 ml-5 mr-5" id ="cont1">
+        
+        <div class="continer text-center mt-5 mb-3 ml-5 mr-5" id ="cont2">
+            <h1 id ="heading">OneClass</h1>
+        </div>
+        <div class="continer text-center mt-2 mb-5 ml-5 mr-5" id ="cont3">
+            <button class ="btn btn-success btn-lg" id ="start" onclick="startClass()">START</button>
+            <button class ="btn btn-danger btn-lg" id ="stop" onclick="stopClass()">STOP</button>
+        </div>
+    </div>
+    <script src="java3.js"></script>
+
+    <!-- get the current time in hours minutes seconds variables
+    substract it with the closest class timing 
+    wait for that time interval
+    as soon as it reaches that time of class, start the setinterval loop.
+    get the day of the week value *10
+    get the class timing closest to that -- coded as a value form 0 to 5 according to the time 
+    add these two values to get the complete class code
+    now search from the database of vars to select the correct link and open that one conditionally
+-->
+</body>
+</html>
+
